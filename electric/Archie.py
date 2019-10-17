@@ -24,3 +24,6 @@ def Sw(Rt,Rw,P,a=1,b=1,m=2,n=2 ):
     sw=(a*b*Rw/((P**m)*Rt))**(1/n)
     return sw
 
+if __name__=="__main__":
+    w=numpy.arange(100)*0.1
+    rtw=Rt(w,0.2,0.6,a=1,b=1,m=2,n=2 )
